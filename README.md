@@ -81,29 +81,7 @@ cmake --build build --parallel
 
 Expected output:
 
-```
-  ██████╗ ██╗      ██████╗  ██████╗ ███╗   ███╗
-  ...
-  FILTER  — Thread-Safe · XXH3 · C++23
-
-╔══════════════════════════════════════════════╗
-║   Hash Function Benchmark (500000 keys)      ║
-╚══════════════════════════════════════════════╝
-  XXH3 (system libxxhash)  :     0.00 ms
-  Boost.Hash2 xxhash_64    :     5.81 ms
-  XXH3Lite (C++23 manual)  :     0.00 ms
-
-╔══════════════════════════════════════════════╗
-║   False-Positive Rate Test                   ║
-╚══════════════════════════════════════════════╝
-  False negatives : 0  (must be 0)
-  False positives : 972 / 100000 = 0.972%  (target ≤ 1.0%)
-
-  Insert : 60.02 ms  (16.66 M ops/sec)
-  Lookup : 49.97 ms  (20.01 M ops/sec)
-
-  PASSED: zero false-negatives — filter is correct.
-```
+![My Image](output.png)
 
 ---
 
